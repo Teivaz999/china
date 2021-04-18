@@ -1,0 +1,26 @@
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/advantages';
+@import 'blocks/work';
+@import 'blocks/agent';
+@import 'blocks/consultation';
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin:0 auto;
+  width:1140px;
+  padding:0;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color:#fff;
+  text-align: center;
+  &_black {
+    color:#000;
+  }
+}

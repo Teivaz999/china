@@ -1,0 +1,35 @@
+.work {
+  padding:50px 0 57px 0;
+  hr {
+    width: 148px;
+    height: 1px;
+    background-color:$main-color;
+  }
+  &__descr {
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    width:890px;
+  }
+  &__title {
+    font-size: 18px;
+    color:$main-color;
+    text-align: center;
+    margin-top: 27px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top:37px;
+  }
+  &__item {
+    width:360px;
+  }
+  &__text {
+    color:#3a3a3a;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
