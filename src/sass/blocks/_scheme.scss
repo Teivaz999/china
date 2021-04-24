@@ -1,0 +1,32 @@
+.scheme {
+  background-color: #f3f3f3;
+  padding:50px 0 45px 0;
+  .title {
+    margin-bottom: 30px;
+  }
+  .row {
+    margin-bottom:25px;
+  }
+  
+  &__title {
+    color:$main-color;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top:60px;
+
+  }
+  &__img {
+    position: absolute;
+    top:0;
+    right:50%;
+    transform: translateX(50%);
+  }
+  &__item {
+    position: relative;
+    text-align: center;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: light;
+  }
+}

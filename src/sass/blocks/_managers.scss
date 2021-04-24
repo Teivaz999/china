@@ -1,0 +1,21 @@
+.managers {
+  padding:57px 0 75px 0;
+  background: url('../../img/bg-town.png') center center/cover no-repeat;
+  text-align: center;
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    border:1px solid white;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+  }
+  &__text {
+    margin-top: 17px;
+    font-size: 19px;
+    font-weight: light;
+    color:#fff;
+  }
+}

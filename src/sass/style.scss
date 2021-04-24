@@ -4,6 +4,8 @@
 @import 'blocks/work';
 @import 'blocks/agent';
 @import 'blocks/consultation';
+@import 'blocks/managers';
+@import 'blocks/scheme';
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -29,4 +31,12 @@ hr {
   &_black {
     color:#000;
   }
+}
+
+.agent__title {
+  color:#fff;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 19px;
+  line-height: 27px;
 }
