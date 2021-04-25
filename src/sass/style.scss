@@ -6,6 +6,7 @@
 @import 'blocks/consultation';
 @import 'blocks/managers';
 @import 'blocks/scheme';
+@import 'blocks/reviews';
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -15,6 +16,10 @@
   margin:0 auto;
   width:1140px;
   padding:0;
+}
+
+button {
+  cursor:pointer;
 }
 
 hr {
@@ -28,6 +33,7 @@ hr {
   font-weight: bold;
   color:#fff;
   text-align: center;
+  text-transform: uppercase;
   &_black {
     color:#000;
   }
