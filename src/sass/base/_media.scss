@@ -1,0 +1,20 @@
+@media (max-width: 1200px) {
+  .header {
+    &__connect {
+      flex-direction:column;
+    }
+    &__phone {
+      margin-bottom: 10px;
+      margin-right:0 !important;
+      span {
+        display: none !important;
+      }
+    }
+    &__descr {
+      margin-top: 10px;
+    }
+    &__decoration {
+      margin-top: 20px !important;
+    }
+  }
+}
