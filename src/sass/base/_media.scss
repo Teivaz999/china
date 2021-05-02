@@ -1,5 +1,8 @@
 @media (max-width: 1200px) {
   .header {
+    &__row {
+      justify-content: space-around;
+    }
     &__connect {
       flex-direction:column;
     }
@@ -15,6 +18,17 @@
     }
     &__decoration {
       margin-top: 20px !important;
+    }
+  }
+}
+
+@media (max-width:992px) {
+  .header {
+    &__menu {
+      display: none !important;
+    }
+    &__hamburger {
+      display: block !important;
     }
   }
 }
