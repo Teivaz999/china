@@ -7,12 +7,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s all;
   }
   &__menu {
     display: flex;
+    position: relative;
     list-style: none;
     margin:0;
     padding:0;
+    transition: 0.5s all;
   }
   &__item {
     padding:0px 15px 0px 10px;
@@ -33,6 +36,7 @@
   &__connect {
     display: flex;
     align-items: center;
+    position: relative;
     color:#fff;
   }
   &__phone {
@@ -72,23 +76,24 @@
     cursor: pointer;
     position:relative;
     width:50px;
-    height:4px;
-    background-color: $main-color;
-    &:after {
-      content:"";
-      position: absolute;
-      top:10px;
+    transition: 0.5s all;
+    span {
       width:50px;
       height:4px;
       background-color: $main-color;
+      transition: 0.5s all;
     }
-    &:before {
-      content:"";
+    span:nth-child(1) {
       position: absolute;
       top:-10px;
-      width:50px;
-      height:4px;
-      background-color: $main-color;
+    }
+    span:nth-child(2) {
+      position: absolute;
+      top:0px;
+    }
+    span:nth-child(3) {
+      position: absolute;
+      top:10px;
     }
   }
 

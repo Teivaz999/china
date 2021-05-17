@@ -25,10 +25,37 @@
 @media (max-width:992px) {
   .header {
     &__menu {
-      display: none !important;
+      flex-direction: column;
+      right:-100%;
+      &_active {
+        position:absolute;
+        right: -50%;
+        width:50%;
+        height:300px;
+        background-color: gray;
+      }
+    }
+    &__connect_active {
+      right:30%;
+      
+    }
+    &__item {
+      border:none !important;
+      padding:0 !important;
     }
     &__hamburger {
       display: block !important;
+      &_active {
+        span:nth-child(1) {
+          transform: translateY(10px) rotate(45deg);
+        }
+        span:nth-child(2) {
+          display: none;
+        }
+        span:nth-child(3) {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+      }
     }
   }
 }
