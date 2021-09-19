@@ -37,14 +37,14 @@ $(document).ready(function(){
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector('.header__mobile-menu'),
+  const menu = document.querySelector('.header__menu'),
   menuItem = document.querySelectorAll('.header__item'),
   hamburger = document.querySelector('.header__hamburger');
   connect = document.querySelector('.header__connect');
 
   hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('header__hamburger_active');
-      menu.classList.toggle('header__mobile-menu_active');
+      menu.classList.toggle('header__menu_active');
       connect.classList.toggle('header__connect_active');
   });
 
@@ -63,41 +63,4 @@ $('[data-modal=application]').on('click', function() {
 $('.popup-call__close').on('click', function (){
   $('.overlay').fadeOut();
 });
-
-$(document).ready(function () {
-  $('input,textarea').focus(function(){
-    $(this).data('placeholder',$(this).attr('placeholder'))
-    $(this).attr('placeholder','');
-  });
-  $('input,textarea').blur(function(){
-    $(this).attr('placeholder',$(this).data('placeholder'));
-  });
-  });
-
-$('.consultation__form').validate( {
-  rules: {
-    name:{
-      required: true,
-      minlength: 3
-    },
-    phone:"required",
-    email: {
-      required:true,
-      email:true
-    }
-  },
-  messages: {
-    name: {
-      required: "Напишите как вас зовут",
-      minlength: jQuery.validator.format("Поле должно содержать больше {0} символов")
-    },
-    email: {
-      required: "Для связи нужна ваша почта",
-      email: "Ваша почта должна быть в формате name@domain.com"
-    }
-  }
-});
-$('.popup-call__form').validate();
-
-
 });

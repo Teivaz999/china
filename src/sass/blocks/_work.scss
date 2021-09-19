@@ -1,12 +1,13 @@
 .work {
   padding:50px 0 57px 0;
+  overflow: hidden;
   
   &__descr {
     font-size: 21px;
     font-weight: 300;
     text-align: center;
     margin: 0 auto;
-    width:890px;
+    /* width:890px; */
   }
   &__title {
     font-size: 18px;
@@ -18,14 +19,22 @@
     display: flex;
     justify-content: space-between;
     margin-top:37px;
+    
   }
   &__item {
-    width:360px;
-  }
+    flex-basis: 33%;
+  } 
   &__text {
     color:#3a3a3a;
     font-size: 14px;
     text-align: center;
+    width:85%;
+    margin:0 auto;
     margin-top: 15px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width:340px;
   }
 }
