@@ -39,13 +39,18 @@ $(document).ready(function(){
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.header__mobile-menu'),
   menuItem = document.querySelectorAll('.header__item'),
-  hamburger = document.querySelector('.header__hamburger');
-  connect = document.querySelector('.header__connect');
+  hamburger = document.querySelector('.header__hamburger'),
+  connect = document.querySelector('.header__connect'),
+  row = document.querySelector('.header__row'),
+  descr = document.querySelector('.header__descr');
+
 
   hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('header__hamburger_active');
       menu.classList.toggle('header__mobile-menu_active');
       connect.classList.toggle('header__connect_active');
+      row.classList.toggle('header__row-fixed');
+      descr.classList.toggle('header__descr-mt0');
   });
 
   
@@ -55,8 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
           hamburger.classList.toggle('hamburger_active');
           menu.classList.toggle('top-menu_active');
           connect.classList.toggle('header__connect_active');
-      })
-  })
+      });
+  });
 $('[data-modal=application]').on('click', function() {
   $('.overlay').fadeIn();
 });
@@ -66,7 +71,7 @@ $('.popup-call__close').on('click', function (){
 
 $(document).ready(function () {
   $('input,textarea').focus(function(){
-    $(this).data('placeholder',$(this).attr('placeholder'))
+    $(this).data('placeholder',$(this).attr('placeholder'));
     $(this).attr('placeholder','');
   });
   $('input,textarea').blur(function(){

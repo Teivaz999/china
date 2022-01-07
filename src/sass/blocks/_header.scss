@@ -15,6 +15,11 @@
     margin: 0 auto;
     
     transition: 0.5s all;
+    &-fixed {
+      position:fixed;
+      z-index:1;
+      width:80%;
+    }
   }
   &__menu {
     display: flex;
@@ -27,10 +32,10 @@
   }
   &__mobile {
     &-menu {
-    height:100vh;
+    height:105vh;
     width:100%;
     position: fixed;
-    top:150px;
+    top:0;
     transform: translateX(100%);
     z-index: 1;
     transition: 0.5s all;
@@ -43,11 +48,15 @@
     &__items {
       list-style: none;
       display: flex;
-      align-items:center;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
       flex-wrap: wrap;
-      height: 400px;
+      height: 100vh;
       padding: 0;
-      padding-left:134px;
+      padding-top:200px;
+      padding-bottom:50px;
+      text-align: center;
       
       a {
         color:#fff;

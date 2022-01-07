@@ -82,19 +82,30 @@
     justify-content: center;
     height:164px;
     margin-top:70px;
-    border:1px solid;
-    border-color:#c4c4c4 #898989;
+    border:1px solid #ec644b;
   }
   &__form {
+    display: flex;
+    width:80%;
+    justify-content: space-between;
     input {
       border-radius: 50px;
-      border:1px solid #c9c9c9;
+      border:1px solid #ec644b;
       color:#101010;
       font-size: 12px;
       width: 268px;
       height: 45px;
       padding:18px 28px;
       outline:none;
+      &:focus {
+        box-shadow: 0px 0px 2px 2px #ec644b;
+      }
+    }
+    &__input {
+      &-wrap {
+        position:relative;
+        display: flex;
+      }
     }
   }
   &__icon {
@@ -144,7 +155,7 @@
       content:"";
       position:absolute;
       left:-11px;
-      width:10px;
+      width:11px;
       height:50px;
       background-color: #fff;
     }
@@ -152,9 +163,17 @@
       content:"";
       position:absolute;
       right:-11px;
-      width:10px;
+      width:11px;
       height:50px;
       background-color: #fff;
     }
   }
+}
+label.error {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 100%;
+  color: red;
+  transform: translateX(-50%);
 }
