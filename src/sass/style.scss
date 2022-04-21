@@ -32,9 +32,11 @@ body {
 }
 
 button {
-  &:hover {
+  &:hover:not(.consultation__button) {
     background-color:rgba(236, 100, 75, .8);
   }
+
+
   cursor:pointer;
   &:focus {
     outline: none;
