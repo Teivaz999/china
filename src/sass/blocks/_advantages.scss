@@ -2,11 +2,12 @@
   background-color: #f3f3f3;
   padding:57px 0;
   .row {
+    margin-left:30px;
     margin-top:29px;
   }
   &__item {
     display: flex;
-    flex-basis:50%;
+    /* flex-basis:50%; */
     align-items: flex-start;
     margin-bottom: 35px;
     padding-right:36px;
